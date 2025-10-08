@@ -1,0 +1,86 @@
+.advantages{
+    min-height: 473px;
+    background-color: #F6F6F6;
+    padding: 70px 0 65px 0;
+    &__title{
+        color: #0D0D0D;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__wrapper{
+        display: flex;
+        text-align: center;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+    &__items{
+        max-width: 260px;
+        }
+    &__text{
+        margin-top: 35px;
+        color:#0D0D0D;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr{
+        color:#0D0D0D;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        span{
+            color:#FF0000;
+            text-transform: uppercase;
+        }
+    }
+}
+@media (max-width: 767px) { // от 576 до 767
+    .advantages{
+        &__items{
+            max-width: 190px;
+        }
+        &__text{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__descr{
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 14px;
+        }
+    }
+}
+
+@media (max-width: 575px) { // от 320 до 575
+    .advantages{
+        min-height: 300px;
+        padding: 40px 0 50px 0;
+        &__wrapper{
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__items{
+            margin: 30px auto 0px;
+        }
+        &__text{
+            margin-top: 20px;
+        }
+        &__descr{
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+
+//@media (max-width: 1200px) //от 992 до 1200
+
+//@media (max-width: 991px) // от 768 до 991
+
+//@media (max-width: 767px) // от 576 до 767
+
+//@media (max-width: 575px) // от 320 до 575
