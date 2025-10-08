@@ -2,14 +2,6 @@
     min-height: 473px;
     background-color: #F6F6F6;
     padding: 70px 0 65px 0;
-    &__title{
-        color: #0D0D0D;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-    }
     &__wrapper{
         display: flex;
         text-align: center;
@@ -77,10 +69,3 @@
 
 
 
-//@media (max-width: 1200px) //от 992 до 1200
-
-//@media (max-width: 991px) // от 768 до 991
-
-//@media (max-width: 767px) // от 576 до 767
-
-//@media (max-width: 575px) // от 320 до 575

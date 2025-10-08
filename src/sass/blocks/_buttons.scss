@@ -14,4 +14,20 @@
         font-size: 16px;
         margin-top: 67px;
     }
+    &_submit{
+        width: 100%;
+        height: 58px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) { // от 320 до 575
+    .header{
+        .button{
+            width: 125px;
+            height: 20px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
 }

@@ -1,0 +1,39 @@
+.feed-form{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    input{
+        height: 52px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        color: #4B4B4B;
+        font-size: 14px;
+        font-weight: 300;
+        &:nth-child(3){
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {  // от 768 до 991
+    .feed-form{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 575px) {  // от 768 до 991
+    .feed-form{
+        margin-left: 10px;
+    }
+}
+
+//@media (max-width: 1200px) //от 992 до 1200
+
+//@media (max-width: 991px) // от 768 до 991
+
+//@media (max-width: 767px) // от 576 до 767
+
+//@media (max-width: 575px) // от 320 до 575

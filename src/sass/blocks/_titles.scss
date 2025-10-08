@@ -1,0 +1,37 @@
+.title{
+    color: #0D0D0D;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    &_left{
+        color: #fff;
+        font-size: 36px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) { // от 768 до 991
+    .title{
+        &_left{
+            margin-left: 20px;
+            font-size: 30px;
+        }
+    }
+} 
+
+@media (max-width: 767px) { // от 576 до 767
+    .title{
+        &_left{
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 575px) { // от 320 до 575
+    .title{
+        &_left{
+            font-size: 13px;
+        }
+    } 
+}

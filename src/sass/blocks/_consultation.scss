@@ -1,0 +1,46 @@
+.consultation{
+    background: url(../../img/consultation.jpg) center (center/cover) no-repeat;
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    &__descr{
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 991px) { // от 768 до 991
+    .consultation{
+        &__descr{
+            margin-left: 20px;
+        }
+    }
+} 
+
+@media (max-width: 767px) { // от 576 до 767
+    .consultation{
+        &__descr{
+            font-size: 17px;;
+        }
+    }
+}
+
+@media (max-width: 575px) { // от 320 до 575
+    .consultation{
+        min-height: 580px;
+        padding: 70px 0 70px 0;
+        &__descr{
+            font-size: 13px;
+            line-height: 13px;
+        }
+    }
+}
+
+//@media (max-width: 1200px) //от 992 до 1200
+
+//@media (max-width: 991px) // от 768 до 991
+
+//@media (max-width: 767px) // от 576 до 767
+
+//@media (max-width: 575px) // от 320 до 575
