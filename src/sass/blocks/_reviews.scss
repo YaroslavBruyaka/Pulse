@@ -1,0 +1,105 @@
+.reviews{
+    padding-bottom: 48px;
+    &-item{
+        display: flex;
+        margin-top: 60px;
+        &__img{
+            width: 169px;
+            height: 169px;
+            margin-right: 60px;
+        }
+        &__name{
+            font-size: 18px;
+            font-weight: 700;
+            color: #0D0D0D;
+            line-height: 18px;
+            &_hidden{
+                display: none;
+            }
+        }
+        &__status{
+            font-size: 14px;
+            font-weight: 500;
+            color: #646464;
+            &_hidden{
+                display: none;
+            }
+        }
+        &__descr{
+            font-size: 16px;
+            font-weight: 300;
+            color: #0D0D0D;
+            line-height: 20px;
+            margin-top: 30px;
+            width: 686px;
+        }
+    }
+}
+@media (max-width: 991px) { // от 768 до 991
+    .reviews{
+        &-item{
+            &__img{
+                margin-right: 35px;
+                margin-left: 25px;
+            }
+            &__descr{
+                width: 535px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) { // от 576 до 767
+    .reviews{
+        &-item{
+            &__descr{
+                width: 345px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) { // от 320 до 575
+    .reviews{
+        &-item{
+            margin-top: 25px;
+            display: block;
+            &__small{
+                display: flex;
+                align-items: center;
+            }
+            &__img{
+                width: 90px;
+                height: 90px;
+                margin-right: 15px;
+                margin-left: 10px;
+            }
+            &__name_small, &__status_small{
+                display: none;
+            }
+            &__name_hidden{
+                display: block;
+                font-size: 17px;
+                line-height: 13px;
+            }
+            &__status_hidden{
+                display: block;
+            }
+            &__descr{
+                width: 310px;
+                font-size: 12px;
+                line-height: 14px;
+                margin: 5px 5px 5px 10px;
+            }
+        }
+    }
+}
+
+
+
+
+//@media (max-width: 1200px) //от 992 до 1200
+
+//@media (max-width: 991px) // от 768 до 991
+
+//@media (max-width: 767px) // от 576 до 767
+
+//@media (max-width: 575px) // от 320 до 575

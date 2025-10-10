@@ -19,6 +19,11 @@
         height: 58px;
         font-size: 16px;
     }
+    &_mini{
+        font-size: 14px;
+        width: 135px;
+        height: 42px;
+    }
 }
 
 @media (max-width: 575px) { // от 320 до 575

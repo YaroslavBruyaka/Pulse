@@ -9,6 +9,9 @@
         font-size: 36px;
         text-align: left;
     }
+    &_regular{
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 991px) { // от 768 до 991
@@ -30,8 +33,13 @@
 
 @media (max-width: 575px) { // от 320 до 575
     .title{
+        font-size: 28px;
         &_left{
             font-size: 13px;
+        }
+        &_regular{
+            font-size: 23px;
+            font-weight: 700;
         }
     } 
 }
