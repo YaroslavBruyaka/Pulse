@@ -1,0 +1,93 @@
+.footer{
+    height: 630px;
+    position: relative;
+    &__info{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        min-height: 270px;
+        background-color: rgba(255,0,0,0.8);
+    }
+    &__address{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #fff;
+
+    }
+    &__phone{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-top: 36px;
+        text-align: center;
+        &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &__icons{
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        margin: 0 13px;
+        img{
+            height: 27px;
+        }
+    }
+}
+@media (max-width: 767px)  { // от 576 до 767
+    .footer{
+        &__info{
+            width: 275px;
+            min-height: 210px;
+        }
+        &__address{
+            margin-top: 35px;
+            font-size: 16px;
+        }
+        &__phone{
+            margin-top: 25px;
+            font-size: 16px;
+        }
+        &__link{
+            width: 40px;
+            height: 40px;
+        }
+        &__icons{
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 575px) { // от 320 до 575
+    .footer{
+        &__info{
+            top: 50px;
+        }
+    }
+}
+
+
+//@media (max-width: 1200px) //от 992 до 1200
+
+//@media (max-width: 991px) // от 768 до 991
+
+//@media (max-width: 767px) // от 576 до 767
+
+//@media (max-width: 575px) // от 320 до 575
