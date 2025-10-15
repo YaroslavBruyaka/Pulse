@@ -16,6 +16,9 @@
             margin-bottom: 20px;
         }
     }
+    &_mt25{
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 991px) {  // от 768 до 991
@@ -26,8 +29,12 @@
 
 @media (max-width: 575px) {  // от 320 до 575
     .feed-form{
-        margin-left: 62px;
-        
+        margin-left: 40px;
+        width: 240px;
+        &_mt25{
+            margin-left: 0px;
+            width: 235px;
+        }
     }
 }
 

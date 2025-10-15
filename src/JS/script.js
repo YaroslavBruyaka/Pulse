@@ -71,4 +71,41 @@ window.addEventListener('DOMContentLoaded', () => {
             list[i].classList.toggle('catalog-item__list_active');
         });
     }
+    ///модальные окна///
+    const btnConsultation = document.querySelectorAll('[data-modal="consultation"]'),
+          by = document.querySelectorAll(".button_mini"),
+          close = document.querySelectorAll('.modal__close'),
+          overlay = document.querySelector('.overlay'),
+          consultation = document.getElementById('consultation'),
+          order = document.getElementById('order'),
+          thanks = document.getElementById('thanks'),
+          textOrder = document.querySelectorAll('.modal__descr'),
+          textCard = document.querySelectorAll('.catalog-item__subtitle');
+    
+    btnConsultation.forEach(item => { //перебирает все кнопки "заказать"
+        item.addEventListener('click', () => { //слушает все кнопки "заказать"
+            overlay.style.display = "block"; //присваивает display block для появления на сайте
+            consultation.style.display = "block"; //присваивает display block для появления на сайте
+        });
+    });
+    close.forEach(item => { //перебирает все кнопки "крестика"
+        item.addEventListener('click', () => {
+            overlay.style.display = "none";
+            consultation.style.display = "none";
+            order.style.display = "none";
+            thanks.style.display = "none";
+        });
+    });
+
+    by.forEach((item, i) => { //перебирает все кнопки "Купить"
+        item.addEventListener('click', () => {
+            overlay.style.display = "block";
+            order.style.display = "block";
+            textOrder[i].textContent = textCard[i].textContent; //ищет в карточке название и присваивает его в модальное окно
+        });
+    });
+
+
+
+
 });
