@@ -104,8 +104,57 @@ window.addEventListener('DOMContentLoaded', () => {
             textOrder[i].textContent = textCard[i].textContent; //ищет в карточке название и присваивает его в модальное окно
         });
     });
+});
+////jQuery////
+$(window).ready(function(){
+    //Валидация
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                  },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    };
 
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 
+//маска ввода телефона//
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+//стрелка для возврата по локальной ссылке    
+    $(window).scroll(function() { //функция показывает стрелку при скорлле на 1600 px
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href=#up]").click(function(){ //плавный переход по локальной ссылке
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 
 });

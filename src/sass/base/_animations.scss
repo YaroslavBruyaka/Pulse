@@ -1,0 +1,11 @@
+@keyframes heartbeat{
+    from{
+        transform: scale(1); //масштаб 1 или 100%, т.е. текущий размер
+    }
+    50% {
+        transform: scale(1.4);//масштаб 1,4 или 140%
+    }
+    to{
+        transform: scale(1); //масштаб 1,4 или 140%
+    }
+}

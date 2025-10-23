@@ -8,6 +8,17 @@
         color: #fff;
         line-height: 30px;
     }
+    .error{
+        border: 2px solid $main-color;
+    }
+    label.error{
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 10px;
+    }
 }
 
 @media (max-width: 991px) { // от 768 до 991
